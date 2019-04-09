@@ -1,6 +1,6 @@
 # Alma
 An abstraction layer for text formating in the terminal.
-Licensed under the _place *PL here_
+Licensed under the MIT public license.
 
 ## Introduction
 
