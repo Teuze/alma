@@ -8,11 +8,19 @@ STRING=""	# Displayed string
 for i in "$@"	# Argument parser
 do
 case $i in
+    -h|--help)
+    echo "Alma : Colors and effects for the terminal."
+    echo "Usage : $0 your-text <--effect> <-fg=color> <-bg=color>"
+    echo "Available effects : bold italic underline cross blink reverse faint hidden"
+    echo "Available colors  : cyan magenta yellow red blue green white black "
+    exit
+    ;;
+    -v|--version)
+    echo "Alma v0.1 alpha (April 2019)"
+    exit
+    ;;
     -b|--bold)
     PREFIX=$PREFIX"1;"
-    ;;
-    -f|--faint)
-    PREFIX=$PREFIX"2;"
     ;;
     -i|--italic)
     PREFIX=$PREFIX"3;"
@@ -20,17 +28,20 @@ case $i in
     -u|--underline)
     PREFIX=$PREFIX"4;"
     ;;
+    -c|--cross)
+    PREFIX=$PREFIX"9;"
+    ;;
     -w|--blink)
     PREFIX=$PREFIX"5;"
     ;;
     -r|--reverse)
     PREFIX=$PREFIX"7;"
     ;;
+    -f|--faint)
+    PREFIX=$PREFIX"2;"
+    ;;
     -h|--hidden)
     PREFIX=$PREFIX"8;"
-    ;;
-    -c|--crossing)
-    PREFIX=$PREFIX"9;"
     ;;
 
     -n=*|--font=*)
