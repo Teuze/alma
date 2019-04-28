@@ -16,7 +16,7 @@ Pull requests and suggestions of any kind are welcome.
 alma "Borrow or rob?" -bg=blue -fg=red -c -i
 
 # The following displays green-on-yellow, bold, blinking text.
-alma "Race fast, safe car!" -bg=blue -fg=red -c -i
+alma "Race fast, safe car!" -bg=blue -fg=red -b -w
 ```
 
 ## Official to-do list
